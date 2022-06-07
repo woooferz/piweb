@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pi Web</title>
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/pico.css" />
+  </head>
+  <body>
+    <div class="container">
+      <br /><br /><br />
+      <h1>Method #1 (Worse)</h1>
+      <p>
+        1 - (1÷3) + (1÷5) - (1÷7) + (1÷9) <b>(The Gregory-Leibniz Series)</b>
+      </p>
+      <input id="method1" type="text" placeholder="Iterations" />
+      <button onclick="method1()">Submit</button>
+      <p id="result1"></p>
+      <br /><br /><br /><br /><br />
+      <h1>Method #2 (Better)</h1>
+      <p>
+        3 + (4÷(2x3x4)) - (4÷(4x5x6)) + (4÷(6x7x8)) - (4÷(8x9x10))
+        <b>(The Nilakantha Series)</b>
+      </p>
+      <input id="method2" type="text" placeholder="Iterations" />
+      <button onclick="method2()">Submit</button>
+      <p id="result2"></p>
+      <br /><br /><br /><br /><br />
+      <p>This project is on Github</p>
+    </div>
+  </body>
+</html>
